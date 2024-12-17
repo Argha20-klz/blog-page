@@ -1,0 +1,189 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - Blog Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <!-- Toggler Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#sidebarContent"
+            aria-controls="sidebarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Sidebar Content -->
+          <div class="collapse navbar-collapse" id="sidebarContent">
+            <div class="">
+              <!-- User Info -->
+              <div class="user-info">
+                <img
+                  src="./assets/images/profile.jpg"
+                  alt="User Image"
+                  class="user-image"
+                />
+                <h5>John Doe</h5>
+              </div>
+
+              <!-- Navigation Links -->
+              <nav class="sidebar-nav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Dashboard</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./users.html">Users</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./category.html">Category</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./editProfile.html"
+                      >Profile</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <button class="btn btn-outline-danger btn-new-post">
+                      <i class="fa-solid fa-right-from-bracket"></i> Logout
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+
+              <!-- New Post Button -->
+            </div>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <div class="container">
+      <div class="editProfile-container">
+        <h2 class="text-center form-title">Edit Your Profile</h2>
+        <div class="profile_img_box">
+          <img
+            class="profile_img"
+            src="./assets/images/profile.jpg"
+            alt="Profile_image"
+          />
+          <div class="edit">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </div>
+        </div>
+        <form action="" method="POST">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <div class="input-icon">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                  />
+                  <i class="fas fa-user"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <div class="input-icon">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email"
+                  />
+                  <i class="fas fa-envelope"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="mobile">Mobile</label>
+                <div class="input-icon">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="text"
+                    id="phone"
+                    placeholder="Enter your Mobile number"
+                  />
+                  <i class="fas fa-phone"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="password">Old Password</label>
+                <div class="input-icon">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    name="password"
+                    placeholder="Create a strong password"
+                  />
+                  <i class="fas fa-lock"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="confirmPassword">New Password</label>
+                <div class="input-icon">
+                  <input
+                    type="password"
+                    class="form-control"
+                    name="password_confirmation"
+                    id="confirmPassword"
+                    placeholder="Confirm your password"
+                  />
+                  <i class="fas fa-lock"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex gap-4 justify-content-end">
+            <button class="btn btn-primary edit-save">Save</button>
+            <button class="btn btn-danger edit-cancel">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

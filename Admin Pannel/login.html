@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | BlogWorld</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-container">
+        <h2 class="text-center form-title">Log In</h2>
+        <form action="">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <div class="input-icon">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+              <i class="fas fa-envelope"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <div class="input-icon">
+              <input
+                type="password"
+                class="form-control"
+                name="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+              />
+              <i class="fas fa-lock"></i>
+            </div>
+          </div>
+          <a href="./forgotPass.html" class="text-muted">Forgot Password?</a>
+
+          <button
+            type="submit"
+            class="btn btn-primary btn-block btn-login mt-3"
+          >
+            Sign In
+          </button>
+
+          <!-- Success Message Toast -->
+          <div class="text-center mt-3">
+            <small class="text-muted"
+              >Don't have an account?
+              <a href="./register.html">Create Account</a></small
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
